@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Alcaldia Kukrahill">
+    <meta name="author" content="Sheilon gamboa">
+    <title>Alcaldia KukraHill</title>
+    <!--  CSS from bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--  font awesome icons  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!--FAVicon-->
+    <link rel="icon" type="image/x-icon" href="./img/LOGO.ico">
+    <!--  Magnific Popup css file  -->
+    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+
+
+    <!--  Owl-carousel css file  -->
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+
+    <!--  custom css file  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <script>
+        // show the given page, hide the rest
+        function show(elementID) {
+            // try to find the requested page and alert if it's not found
+            var ele = document.getElementById(elementID);
+            if (!ele) {
+                alert("Pagina no Existe!");
+                return;
+            }
+
+            // get all pages, loop through them and hide them
+            var pages = document.getElementsByClassName('page');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+
+            // then show the requested page
+            ele.style.display = 'block';
+        }
+        function CallMe(numbers) {
+            alert("Please Dial: " + numbers + " with your phone");
+        }
+    </script>
+    </header>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3023186445054482"
+     crossorigin="anonymous"></script>
+<body class="bg-Dark">
+    <!--  ======================= Start Header Area ============================== -->
+    <header class="header_area shadow">
+        <div class="main-menu">
+            <nav class="navbar bg bg-Dark narbar-expand navbar-expand-lg navbar-expand-sm ">
+                <a class="navbar-brand" onclick="show('H');" href="#">
+                    <img src="./img/LOGO.png" width="50" height="50" class="d-inline-block align-items-center"
+                        alt="logo" loading="lazy">
+                    Alcaldia Kukra Hill
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="show('EV');" href="#">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="show('MV');" href="#">Mision & Vision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="show('L');" href="#"><span
+                                    style="word-wrap: normal; flex-wrap: nowrap;">Attencion General</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                SIAF-CAPS FISE
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://fise.alcaldiakukrahill.online">CAPS FUENTE
+                                    JACOB</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://fise2.alcaldiakukrahill.online">CAPS EL
+                                    SACRIFICIO</a>
+                            </div>
+                        </li>
+                        <!-- <div class="collapse navbar-collapse"  id="navbarNavDarkDropdown">
+                                <li class="nav-item dropdown">
+                                    <a href="" class="nav-link dropdown-toggle"  id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">SIAF CAPS - FISE</a>
+                                </li> 
+                                <ul class="nav-ba" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="https://fise.alcaldiakukrahill.online">FISE FUENTE JACOB</a></li>
+                                  <li><a class="dropdown-item" href="https://fise.alcaldiakukrahill.online">FISE EL SACRIFICIO</a></li> 
+                                </ul>
+                              </div>-->
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="show('C');" href="#">Contactos</a>
+                        </li>
+                    </ul>
+                </div><!--- 
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>-->
+            </nav>
+        </div>
+    </header>
+    <!--  ======================= End Header Area ============================== -->
+    <!-- 
+<div class="container">
+     ====================== WATERMARK ================================ 
+   <img id="watermark" class="watermark " src="./img/watermark.png"/>
+</div>
+-->
+    <main id="H" class="page site-main">
+        <!--  ======================= Start Main Area ================================ -->
+        <div class="container"> 
+            <!-- ================== Carosell ================================= -->
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/img1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img6.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img7.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img8.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img9.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img10.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img11.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/img12.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+            </div> 
+            <br>
+            <div>
+                <p class="container">
+                    Breve reseña histórica de la alcaldía y el municipio de Kukra Hill
+
+                    Según la LEY DE MUNICIPIOS (Ley No. 40 de 2 de Julio de 1988), El Municipio es la unidad base de la
+                    división político administrativa del país.
+                    Se organiza y funciona a través de la participación popular para la gestión y defensa de los
+                    intereses de sus habitantes y de la nación.
+                    Son elementos esenciales del Municipio: el territorio, la población y el gobierno.
+                    Es en base al cumplimiento requerido de la ley no. 40 (Ley de municipios) es en donde se otorga a
+                    Kukra Hill la categoría de "municipio" en
+                    por primera vez en septiembre del año de 1996, en la cual se otorga al pueblo el poder de elegir a
+                    sus gobernantes mediante la libre elección
+                    del voto dando a la autoridad electa el poder de gestionar y disponer de sus recursos con el fin de
+                    satisfacer las necesidades de la población
+                    desde el corazón mismo de esta.
+                    Es en apropiación a esta ley y a su cumplimiento que una vez categorizada como municipio se procedió
+                    a realizar las primeras elecciones
+                    municipales en Noviembre del mismo año (1996), donde el primer alcalde Constitucionalmente electo
+                    por la población fue Cro. Stanley Adán
+                    Cardoza, cuyo gobierno abarca abarca un periodo de 4 años de 1997-2001.
+                    Con posterioridad a este periodo de gobierno procede a ser electa por el pueblo la Lic. Mirna Flora
+                    Villalta Ibarra, la cual tiene un
+                    periodo de gobernabilidad de 4 años comprendido desde 2001-2005.
+                    Finalizando el periodo de la Lic. Villalta, toma posesión por elección del pueblo el Cro. Domingo
+                    Truesdale Hodgsone, en donde se
+                    impulsan conjunto de proyectos para el pueblo y por primera vez los planes de vivienda en el
+                    municipio, periodo que abarca 2005-2008.
+                    Cumpliendo una vez más su periodo de gobernabilidad se es electo por el pueblo al Cro. Agustín
+                    Miranda Larios, el cual tomo posesión
+                    durante 2008-2012, contribuyendo bajo su gobierno mas proyecto para el pueblo que ayudaron poco a
+                    poco a su desarrollo.
+                    De acuerdo a la nueva ley electoral de reelección de autoridades el Cro. Miranda Larios el propuesto
+                    a la candidatura y gana nuevamente
+                    por elección del pueblo las elecciones electorales como alcalde este nuevo periodo le permitió
+                    gobernar desde 2012-2014.
+                    En la actualidad y tomando posesión desde 2014-2017 encontramos al actual alcalde del municipio de
+                    Kukra Hill el Cro. Petry Marcial
+                    Sambola, quien continua la ardua labor de llevar el desarrollo dentro del municipio.
+                </p>
+            </div>
+
+
+    </main>
+    <!-- ========================== Event pages=============================== -->
+    <main id="EV" class="page site-main" style="display: none;">
+        <div class="container"> 
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-ade30d18-1b8e-43f8-802f-8847b1cf00a1"></div>
+            <!--  <iframe name="Iface" src="https://www.facebook.com/AlcaldiadeKukraHill" width="100%" height="838" style="border:none;overflow:hidden" scrolling="Yes" frameborder="0" allowfullscreen >
+            </iframe> -->
+        </div>
+    </main>
+    <!-- ============================    Mission e vision      ====================================-->
+    <main id="MV" class="page container site-main justify-content-center align-content-center" style="display: none;">
+        <div class="container">
+            <div class="card-group p-2 rounded bg-Dark">
+                <div class="card m-2 p-2 bg-Dark">
+                    <div class="card-body">
+                        <h4 class="card-title title-text">MISSION</h4>
+                        <p class="card-text">
+                            Trabajar con eficiencia, transparencia, calidad y promoviendo protagonismo del pueblo,
+                            cultura de trabajo, dialogo, consenso y productividad para el bienestar del municipio.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated By ing Sheilon Gamboa</small>
+                    </div>
+                </div>
+
+                <div class="mr-auto"></div>
+
+                <div class="card m-2 p-2 bg-Dark">
+                    <div class="card-body">
+                        <h4 class="card-title title-text">VISION</h4>
+                        <p class="card-text">
+                            Obtener el desarrollo municipal mediante el buen gobierno y dirección de los fondos mediante
+                            proyectos,
+                            creando oportunidades y ampliando fronteras para el pueblo.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated By ing Sheilon Gamboa</small>
+                    </div>
+                </div>
+                <!-- 
+        <h3>
+          Mission
+        </h3>
+        <a>Trabajar con eficiencia, transparencia, calidad y promoviendo protagonismo del pueblo, 
+          cultura de trabajo, dialogo, consenso y productividad para el bienestar del municipio.
+        <h3>Vision</h3>
+        <a>Obtener el desarrollo municipal mediante el buen gobierno y dirección de los fondos mediante proyectos, 
+          creando oportunidades y ampliando fronteras para el pueblo.</a>-->
+            </div>
+    </main>
+    <!--  ========================= Attencion Genral ==========================  -->
+    <main id="L" class="page container site-main" style="display: none;">
+        <section class="about-area">
+            <h3 style="justify-content: center;">Seran atendidos muy amablemente</h3>
+            <div class="container-fluid">
+                <div class="row">                   
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>RECEPCION </span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Visitanos en horas de Oficina de Lunes a Viernes, de 8:00am
+                                a 12:00md y por la tarde de 1:00pm a 5:00pm
+                                Informese de los horarios de servicios y atencion
+                                brindados.
+                                Una vez atendido espere el turno de atencion que se te otorgue;
+                                para resolver su inquietud o solicitud.
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>CAJA</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Seran atendidos muy amablemente
+                                Relice sus pagos deacuerdo al servicio solicitado y espera
+                                tu recibo correspondiente.
+                            </p>
+                        </div> 
+                    </div>
+                </div>
+                <br>
+                <div class="row"> 
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>FIERRO</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Realiza las matriculas de fierros como lo demanda la ley
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>DEPARTMENTO DE REGISTRO CIVIL DE LAS PERSONAS</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Servicios brindados: Incripciones de Nacimeinto,
+                                Partida de Nacimeinto, Inscripcion de Registro Civil,
+                                Defuncion, Reposicion.
+                            </p>
+                        </div> 
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>TRIBUTACION</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Pago de impuestos sobre negocios pequeñas y grandes empresass.
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>CATASTRO</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Seran atendidos muy amablemente
+                                Relice sus pagos deacuerdo al servicio solicitado y espera
+                                tu recibo correspondiente.
+                            </p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>PLANIFICAICON Y PROYECTO</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Brinda informacion sobre los planes y proyectos desarrollados en el municipio,
+                                como tambien aceptacion de propuestas realizadas desde la perpectiva de la poblacion que
+                                posteriormente son evaluadas.
+                            </p>
+                        </div> 
+                    </div> 
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>PROMOTORIA SOCIAL</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Les brinda atencion a la sociedad civil, apoya a estructuras organizadas;
+                                Educaion, Salud, Radio, erc; radio municipal y comunitaria.
+                                Atencion a las escuelas de oficio y escuelasTecnologicas.
+                            </p>
+                        </div> 
+                    </div>
+                </div>
+                <!-- Servicios Municipales y descripcion-->
+                <div class="row"> 
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>SERVICIOS MUNICIPALES</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Atension de limpieza municpal, parque, cemnterio, barios, etc.
+                            </p>
+                        </div> 
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!-- Catastros-->
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>CATASTRO</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Seran atendidos muy amablemente
+                                Relice sus pagos deacuerdo al servicio solicitado y espera
+                                tu recibo correspondiente.
+                            </p>
+                        </div> 
+                    </div>
+                </div>
+                <!-- ALCALDE -->
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>NUESTRO ALCALDE</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Sera muy amablemente atendido en la inquietud o situacion que solicite.
+                            </p>
+                        </div>
+                        <button type="button" onclick="show('H');" class="btn button primary-button text-uppercase">Pagina Principal</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services-area">
+            <div class="container shadow">
+                <div class="row">
+                    <div class="col-lg-12 text-center services-title">
+                        <h1 class="text-uppercase title-text">Servicios que ofrecemos</h1>
+                        <p class="para">
+                            para mas informacion visita nuestro alcaldia municipal de kukrahill o evianos un <a
+                                href="mailto:alcaldiakh26@gmail.com">Coreo</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  ====================== End Services Area =============================  -->
+    </main>
+    <!--  ========================= Contact Area ==========================  -->
+    <main id="C" class="page container site-main" style="display: none;">
+        <section class="about-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>KukraHill</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                El territorio de Kukra Hill fue habitado originalmente por población de etnia kukra,
+                                pertenecientes al grupo ulua.
+                                Esta etnia en la
+                                segunda mitad del siglo XVII inició un mestizaje con naturales africanos llegados como
+                                esclavos a América;
+                                posteriormente su predominio se interrumpió por la expansión de la etnia misquita que en
+                                alianza con piratas ingleses
+                                les subyugaron.
+                                Desde entonces hasta 1796, cuando Inglaterra debió reconocer la soberanía de España
+                                sobre la Mosquitia, la presencia
+                                inglesa fue una
+                                constante.
+                            </p>
+                            <p class="para">
+                                En 1821, cuando Centroamérica se independizó de España, Inglaterra intervino de nuevo en
+                                la costa Caribe nicaragüense
+                                proclamando el
+                                "Reinado de La Mosquitia" bajo protectorado británico, integrándose el territorio de
+                                Kukra Hill en él.
+                            </p>
+                        </div>
+                        <button type="button" onclick="show('H');"
+                            class="btn button primary-button text-uppercase">Pagina Principal</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  ======================= End Main Area ================================ -->
+        <main class="site-main">
+            <footer class="footer-area blog-footer sticky-bottom d-flex-b copyrights" style="display: block;">
+                <div class="subscribe-us-area">
+                    <div class="subscribe container">
+                        <div class="site-logo text-center py-2">
+                            <a href="#"><img src="./img/LOGO.ico" style="height:5rem ;width:5rem;" alt="logo"></a>
+                        </div>
+                        <div class="row ">
+                            <div class="col-lg-12 text-center subscribe-title">
+                                <h4 class="text-uppercase">Obtenga actualizaciones desde cualquier lugar</h4>
+                                <p class="para">
+                                    envíanos tu correo electrónico para seguir en contacto</p>
+                            </div>
+                        </div>
+                        <div class="d-sm-flex justify-content-center">
+                            <form class="container">
+                                <div class="row d-flex flex-row justify-content-center">
+                                    <div class="col-lg-3 input-textbox">
+                                        <input type="email" id="txtemail" class="form-control" required="true"
+                                            placeholder="correo">
+                                    </div>
+                                    <br>
+                                    <div class="col-lg-3 input-textbox">
+                                        <button type="submit" onclick="" href="#"
+                                            class="btn button primary-button mr-6 text-uppercase btn-success float-right">Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="social text-center subscribe-us-area">
+                            <h5 class="text-uppercase">Síganos</h5>
+                            <a href="https://www.facebook.com/AlcaldiadeKukraHill"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/c/sheivongamboa"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="mailto:informatica@alcaldiakukrahill.online;informatica@alcaldiakukrahill.gob.ni"><i
+                                    class="fab fa fa-envelope-open"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <!-- ============================= chat popup ===================================-->
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-4dcff081-4dc0-4eb5-bfca-11bcd27b94c8"></div>
+
+
+        <!--  ====================== End Services Area =============================  -->
+    </main>
+    <!-- =======================================FOOTER ==================================-->
+    <div class="footer-area blog-footer d-flex-b copyrights bg-gradient-danger">
+        <div class="subscribe-us-area">
+            <section class="services-area">
+                <div class="container shadow">
+                    <div class="row">
+                        <div class="col-lg-12 text-center services-title">
+                            <div class="site-logo text-center py-2">
+                                <a href="#"><img src="./img/LOGO.ico" style="height:5rem ;width:5rem;" alt="logo"></a>
+                            </div>
+                            <div class="social text-center subscribe-us-area">
+                                <a href="https://www.facebook.com/AlcaldiadeKukraHill"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/c/sheivongamboa"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a
+                                    href="mailto:informatica@alcaldiakukrahill.online;informatica@alcaldiakukrahill.gob.ni"><i
+                                        class="fab fa fa-envelope-open"></i></a>
+                            </div>
+                            <div class="text-center m-2 p-2 br-5 gb bg-Dark">
+                                <a>Desarrollador por <span style="color: rgb(183, 21, 148);"> ing.Sheilon Gamboa
+                                        B</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+ 
+    <!-- bootstrap js--> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <!-- JS from bootstrap separator-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <!--  Jquery js file  -->
+    <!-- <script src="./js/jquery.3.4.1.js"></script> -->
+
+    <!--  Bootstrap js file  -->
+    <!--  isotope js library  -->
+    <script src="./vendor/isotope/isotope.min.js"></script>
+
+    <!--  Magnific popup script file  -->
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+
+    <!--  Owl-carousel js file  -->
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
