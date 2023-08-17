@@ -1,0 +1,4 @@
+version: STSv1
+mode: testing
+mx: mailserver.alcaldiakukrahill.gob.ni
+max_age: 604800
