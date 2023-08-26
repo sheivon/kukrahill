@@ -11,18 +11,19 @@
 
 
 /* start navigation */  
+.header_area {
+    margin-bottom: 4rem;
+}
 
-.header_area .main-menu .navbar {
-    padding: 10rem 0 20rem 0 
+.header_area .main-menu .navbar { 
+    padding: 1rem 0 2rem 0 
 }
 .header_area .main-menu .navbar .navbar-brand{
-    padding: 0 1rem 0 5rem; /* up -right - down -left  */
+    padding: 0 1rem 0 2rem; /* up -right - down -left  */
 } 
 
 .header_area .main-menu .nav-item .nav-link{
-    font: normal 500 15px/2px var(--roboto);
-    text-transform: uppercase;
-    padding: 1.7rem;
+    font: normal 500 15px/2px var(--roboto);  
     color: var(--title-color);
 }
 
@@ -58,6 +59,7 @@
 
 /* Banner Area */ 
 .card {
+    margin: 1rem;
     padding: 1rem;
     border-color: var(--gradient-color);
     border-style: solid;
@@ -71,7 +73,7 @@
     border-radius: 2rem;
 }
 .site-main .site-banner {
-    background:/* var(--Light-color)*/  url(../img/banner/home-banner.png) no-repeat 0% 50%; 
+    background:var(--Light-color)/*   url(../img/banner/home-banner.png) no-repeat 0% 50%*/; 
 }
 
 .site-main .site-banner .site-title h3{
@@ -94,7 +96,7 @@
 }
 
 .site-main .site-banner .site-title h4{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .site-main .site-banner .banner-image > img{
@@ -106,6 +108,7 @@
 /* Start About Area */ 
 
 .site-main .about-area{
+    margin:  0 8rem 0 8rem;
     padding: 8rem 5rem;
 }
 
@@ -371,3 +374,34 @@ footer.footer-area .social a:hover > i{
 /* End Footer */ 
 
 
+/* NEW BOOTSTRAP NAV BAR ITEM*/
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #dccabd;
+}
+
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, .15);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+}

@@ -8,8 +8,12 @@
     <title>Alcaldia KukraHill</title>
     <!--  CSS from bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+    crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+    crossorigin="anonymous"></script>
     <!--  font awesome icons  -->
     <link rel="stylesheet" href="./css/all.min.css">
     <!--FAVicon-->
@@ -67,67 +71,77 @@
     </header>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3023186445054482"
      crossorigin="anonymous"></script>
-<body class="container-fluid">
+<body>
     <!--  ======================= Start Header Area ============================== -->
+    <!-- Navbar --> 
     <header class="header_area shadow">
         <div class="main-menu" >
-            <nav class="navbar bg-body-tertiary float-start bg bg-light narbar-expand navbar-expand-lg navbar-expand-sm "> 
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                <a class="navbar-brand" onclick="show('H');" href="#">
-                    <img src="./img/LOGO.png" width="50" height="50" class="d-inline-block align-items-center"
-                        alt="logo" loading="lazy">
-                    Alcaldia Kukra Hill
-                </a>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item">
-                            <a class="nav-link" onclick="show('EV');" href="#">Eventos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" onclick="show('MV');" href="#">Mision & Vision</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" onclick="show('L');" href="#"><span
-                                    style="word-wrap: normal; flex-wrap: nowrap;">Attencion General</span></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                                aria-expanded="false">
-                                SIAF-CAPS FISE
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="https://fise.alcaldiakukrahill.online" target="_blank">CAPS FUENTE
-                                    JACOB</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="https://fise2.alcaldiakukrahill.online" target="_blank">CAPS EL
-                                    SACRIFICIO</a>
-                            </div>
-                        </li> 
-                        <li class="nav-item">
-                            <a class="nav-link" onclick="show('C');" href="#">Contactos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://correo.alcaldiakukrahill.gob.ni" target="_blank">Correo Web</a>
-                        </li>
-                    </ul>
-                </div> 
+        <!-- Navbar -->
+        <nav  class="navbar navbar-expand-lg fixed-top mask-custom shadow-1">
+          <div class="container">  
+            <a class="navbar-brand " onclick="show('H');" href="#">
+                <img src="./img/LOGO.png" width="50" height="50" class="d-inline-block align-items-center"
+                    alt="logo"> <!-- loading="lazy">--> 
+                <h2 class="d-inline-block align-items-center">Alcaldia Kukra Hill</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+              data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" onclick="show('EV');" href="#">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="show('MV');" href="#">Mision & Vision</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="show('L');" href="#"><span
+                        style="word-wrap: normal; flex-wrap: nowrap;">Attencion General</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        SIAF-CAPS FISE
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="nav-link dropdown-item" href="https://fise.alcaldiakukrahill.online" target="_blank">CAPS FUENTE
+                            JACOB</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="nav-link dropdown-item" href="https://fise2.alcaldiakukrahill.online" target="_blank">CAPS EL
+                            SACRIFICIO</a>
+                    </div>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" onclick="show('C');" href="#">Contactos</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link " href="https://correo.alcaldiakukrahill.gob.ni" target="_blank">Correo Web</a>
+                </li> 
+              </ul>
+              <ul class="navbar-nav d-flex flex-row">
+                <li class="nav-item me-3 me-lg-0">
+                  <a class="nav-link" href="https://www.facebook.com/AlcaldiadeKukraHill" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li> 
+              </ul>
             </div>
-            </nav>
-            <!--<img src="./img/gob.png" class="sticky-top " alt="gobrec">-->
+          </div>
+        </nav> 
         </div>
-    </header>
+      </header>
     <!--  ======================= End Header Area ============================== -->
     <!-- 
 <div class="container">
      ====================== WATERMARK ================================ 
    <img id="watermark" class="watermark " src="./img/watermark.png"/>
 </div>
--->  
+-->   
 
-    <main id="H" class="page site-main"> 
+    <main id="H" class="page site-main vh-100"> 
         <!--  ======================= Start Main Area ================================ -->
         <div class="container " style="position: relative;">  
             <div class="c-wrapper " >
@@ -204,7 +218,7 @@
             </div>
             <hr>
             <br>
-            <div data-aos="fade-up">
+            <div data-aos="fade-up mb-10">
                 <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22383.872852419736!2d-83.7570337273814!3d12.241764967883345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f0c1a6f54f6714b%3A0x22a247a76ccd3bd1!2sKukra%20Hill!5e1!3m2!1ses!2sni!4v1692291850944!5m2!1ses!2sni" frameborder="0" allowfullscreen></iframe>
             </div>  
             <hr/>
@@ -541,29 +555,17 @@
       <div class="elfsight-app-4dcff081-4dc0-4eb5-bfca-11bcd27b94c8"></div> 
       <!--  ====================== End Services Area =============================  -->
     <!-- =======================================FOOTER ==================================--> 
-    <section class="row bg-success " >  
-        <!-- Copyright  -->
-        <div class="col-sm-1">
-            <a href="#"><img src="./img/LOGO.ico" style="height:5rem ;width:5rem;" alt="logo"></a> 
-        </div>  
-        <div class="col-4 p-4">
-            Copyright © 2023. All rights reserved. 
-            <br/>
-            <a>Desarrollador por <span style="color: rgb(250, 250, 250);">ing.Sheilon Gamboa B</span></a>
-        </div>  
-        <!-- Right -->
-        <div  class="col-7 row p-4 ">
-            <a href="https://www.facebook.com/AlcaldiadeKukraHill" class="col text-white" target="_blank"><i class="fab fa-facebook">facebook</i></a>  
-            <br/> 
-            <a href="https://www.youtube.com/c/sheivongamboa" class="col text-white"><i class="fab fa-youtube"> Youtube</i></a> 
-            <br/>
-            <a href="mailto:informatica@alcaldiakukrahill.gob.ni" class="col text-white"><i class="fab fa fa-envelope-open"> Correo</i></a>  
-        </div>  
-    </section>   
-
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+    crossorigin="anonymous"></script> 
     <!-- bootstrap js-->  
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" 
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" 
+        crossorigin="anonymous"></script>
     
     <!-- JS from bootstrap separator-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
