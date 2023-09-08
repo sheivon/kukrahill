@@ -14,7 +14,10 @@
 .header_area {
     margin-bottom: 4rem;
 }
-
+.header_area{
+    background-image: url(../img/sandino.jpg);
+    background-repeat: no-repeat;
+}
 .header_area .main-menu .navbar { 
     padding: 1rem 0 2rem 0 
 }
