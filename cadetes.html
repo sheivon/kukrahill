@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Alcaldia Kukrahill">
+    <meta name="author" content="Sheilon gamboa">
+    <title>Alcaldia KukraHill</title>
+    <!--  CSS from bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+    crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+    crossorigin="anonymous"></script>
+    <!--  font awesome icons  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!--FAVicon-->
+    <link rel="icon" type="image/x-icon" href="./img/LOGO.ico">
+    <!--  Magnific Popup css file  -->
+    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+
+
+    <!--  Owl-carousel css file  -->
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+
+    <!--  custom css file  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <script>
+        // show the given page, hide the rest
+        function show(elementID) {
+            // try to find the requested page and alert if it's not found
+            var ele = document.getElementById(elementID);
+            if (!ele) {
+                alert("Pagina no Existe!");
+                return;
+            }
+
+            // get all pages, loop through them and hide them
+            var pages = document.getElementsByClassName('page');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+
+            // then show the requested page
+            ele.style.display = 'block';
+        }
+        function CallMe(numbers) {
+            alert("Please Dial: " + numbers + " with your phone");
+        }
+    </script>
+    <style>
+            div.c-wrapper{
+                width: 60%; /* for example */
+                height: 40%;
+                margin: auto; 
+            }
+
+            .carousel-inner > .item > img, 
+            .carousel-inner > .item > a > img{
+            width: 70%; /* use this, or not */
+            margin: auto;
+            }
+    </style>
+    </header>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3023186445054482"
+     crossorigin="anonymous"></script>
+<body> 
+    
+    <!--  ======================= Start Header Area ============================== -->
+    <!-- Navbar --> 
+    <header class="header_area shadow sticky-top">
+        <div >
+            <img src="./img/sandino.jpg" width="100%"  style="position:absolute;z-index: -1;"/>
+        </div>
+        <br />
+        <br/>
+        <br/>
+        <br />
+        <br /> 
+        <br/>
+        <div class="main-menu"  >  
+        <!-- Navbar -->
+            <nav  class="navbar navbar-expand-lg  mask-custom shadow-1 "> <!-- mask-custom shadow-1  --> 
+                <div class="container ">   
+                    <a class="navbar-brand " onclick="show('H');" href="#"> 
+                        <img src="./img/LOGO.png" width="50" height="50" class="d-inline-block align-items-center"
+                            alt="logo"> <!-- loading="lazy">--> 
+                        <h3 class="d-inline-block align-items-center">Alcaldia Kukra Hill</h3>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                    </button>  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="show('EV');" href="#">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="show('MV');" href="#">Mision & Vision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="show('L');" href="#"><span
+                                style="word-wrap: normal; flex-wrap: nowrap;">Attencion General</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                SIAF-CAPS FISE
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="nav-link dropdown-item" href="https://fise.alcaldiakukrahill.online" target="_blank">CAPS FUENTE
+                                    JACOB</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="nav-link dropdown-item" href="https://fise2.alcaldiakukrahill.online" target="_blank">CAPS EL
+                                    SACRIFICIO</a>
+                            </div>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="show('C');" href="#">Contactos</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://correo.alcaldiakukrahill.gob.ni" target="_blank">Correo Web</a>
+                        </li> 
+                    </ul>
+                    <ul class="navbar-nav d-flex flex-row">
+                        <li class="nav-item me-3 me-lg-0">
+                        <a class="nav-link" href="https://www.facebook.com/AlcaldiadeKukraHill" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        </li> 
+                    </ul>
+                    </div>
+                </div>
+            </nav> 
+        </div>
+      </header>
+    <!--  ======================= End Header Area ============================== -->
+    <!-- 
+<div class="container">
+     ====================== WATERMARK ================================ 
+   <img id="watermark" class="watermark " src="./img/watermark.png"/>
+</div>
+-->   
+<section>
+    <main id="H" class="page site-main vh-100"> 
+        <!--  ======================= Start Main Area ================================ -->
+        <div class="container " >  
+            <div class="c-wrapper " > 
+            <div  class="container-fluid">
+                <p class="container">
+                    <h3>Breve reseña histórica de la alcaldía y el municipio de Kukra Hill</h3>
+                    <br>
+                    El Municipio de Kukra Hill fue territorio de Bluefields hasta el 06 de octubre de 1989, cuando la promulgación de la Ley
+                    de División Política Administrativa de Nicaragua le otorgó categoría de Municipio.
+                    El municipio de Kukra Hill, está ubicado en la Región Autónoma de la Costa Caribe Sur de Nicaragua (RACCS), limita al
+                    norte con el municipio del Tortuguero, al sur con el municipio de Bluefields, al este con el municipio de Laguna de perlas
+                    y el Mar Caribe y al oeste con el municipio del Rama; su cabecera municipal dista 30 Km al norte de Bluefields y a 374
+                    Km de Managua y se encuentra entre las coordenadas 12°14´Latitud Norte y 83°45’ de Longitud Oeste, Cuadrante
+                    3452 de los mapas Topográficos Oficiales del País. El municipio de Kukra Hill, cuenta con una extensión territorial de
+                    1,262 Km 2 . Se estima la población total del municipio en 23,456 habitantes de los cuales 10,555 son hombres y 12,901
+                    son mujeres; dispersándose el 40% en centros urbanos y semiurbanos y el 60% en el área rural. El municipio de Kukra
+                    Hill está compuesto por 39 comunidades rurales y el casco urbano, estas están distribuidas en 21 comunidades
+                    concentradas y 18 comunidades dispersas. El desarrollo agroindustrial del municipio de Kukra Hill en los últimos años
+                    ha estado basado principalmente en la industrialización del cultivo de la Palma Africana y en menor medida el Cacao,
+                    Bambú y Café; así como, la Ganadería, la Agricultura y la Pesca.
+                </p>
+            </div>
+            <hr>
+            <br>
+            <div data-aos="fade-up mb-5">
+                <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22383.872852419736!2d-83.7570337273814!3d12.241764967883345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f0c1a6f54f6714b%3A0x22a247a76ccd3bd1!2sKukra%20Hill!5e1!3m2!1ses!2sni!4v1692291850944!5m2!1ses!2sni" frameborder="0" allowfullscreen></iframe>
+            </div>  
+            <hr/> 
+            </div>
+        </div>
+    </main>
+</section>
+      <!-- ============================= chat popup ===================================-->
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div class="elfsight-app-4dcff081-4dc0-4eb5-bfca-11bcd27b94c8"></div> 
+      <!--  ====================== End Services Area =============================  -->
+    <!-- =======================================FOOTER ==================================--> 
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+    crossorigin="anonymous"></script> 
+    <!-- bootstrap js-->  
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" 
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" 
+        crossorigin="anonymous"></script>
+    
+    <!-- JS from bootstrap separator-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script> 
+    <!--  Bootstrap js file  -->
+    <!--  isotope js library  -->
+    <script src="./vendor/isotope/isotope.min.js"></script>
+
+    <!--  Magnific popup script file  -->
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+
+    <!--  Owl-carousel js file  -->
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
+</body> 
+</html>
